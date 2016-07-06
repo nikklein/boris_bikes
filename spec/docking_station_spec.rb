@@ -1,12 +1,13 @@
 require 'docking_station'
 
 describe DockingStation do
-  it {is_expected.to respond_to(:release_bike)}
-    it 'releases working bikes' do
-    bike = subject.release_bike
-    expect(bike).to be_working
-  #  it 'checks if a dock is free'
-  #expect(DockingStation.dock(bike)) to be true
+it {is_expected.to respond_to(:release_bike)}
+describe '#release_bike' do
+it 'raises an error if there no bikes' do
+
+expect{subject.release_bike}.to raise_error 'No bikes availible'
+  end
+
 end
 it {is_expected.to respond_to(:dock).with(1).argument}
 it 'docks something' do
@@ -18,8 +19,9 @@ it 'returns docked bikes' do
   subject.dock(bike)
   expect(subject.bike).to eq bike
 end
-
 it {is_expected.to respond_to(:bike)}
+
+
 
 
 end
