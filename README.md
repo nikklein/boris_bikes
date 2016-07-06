@@ -1,3 +1,1 @@
-# Boris Bikes Challenges #
-
-!GitPong test!
+# Boris Bikes Challenges
