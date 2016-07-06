@@ -10,7 +10,7 @@ raise 'No bikes availible' if @bike.nil?
   end
 
   def dock bike
-#raise 'No bikes availible' if @bike.nil?
+raise 'The dock is full' if !@bike.nil?
     @bike = bike
   end
 
