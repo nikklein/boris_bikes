@@ -1,10 +1,10 @@
 require 'docking_station'
 
 describe DockingStation do
-<<<<<<< HEAD
-  it {is_expected.to respond_to :release_bike}
+  it {is_expected.to respond_to(:release_bike)}
+    it 'releases working bikes' do
+    bike = subject.release_bike
+    expect(bike).to be_working
 end
-=======
-it {is_expected.to respond_to(:release_bike)}
-end 
->>>>>>> ef866b3a3004516bff720240d1610c53fcc4d984
+
+end
