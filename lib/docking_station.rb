@@ -27,17 +27,11 @@ attr_reader :bikes
 
   private
 
-
-
   def empty?
     bikes.empty?
   end
+
   def full?
     bikes.count >= capacity
   end
-
 end
-d = DockingStation.new
-b = Bike.new
-d.dock b
-d.release_bike
